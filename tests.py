@@ -5,15 +5,10 @@
 tests = 0
 successfulTests = 0
 
-
-returned_result = "Error"
-
-print(returned_result)
-
+# Defining tests 
 test_inputs = [
 	{
-	# 'numbers_to_add': list(range(10000001)),
-	'numbers_to_add': list(range(10)),
+	'numbers_to_add': list(range(10000001)),
 	'expected_result': 50000015000001
 	},
 	{
@@ -22,6 +17,8 @@ test_inputs = [
 	}
 ]
 
+
+# Loop through tests
 for test in test_inputs:
 	tests += 1
 	print('\nTest #%s started' % tests)
