@@ -32,6 +32,4 @@ for test in test_inputs:
 		print('Test #%s failed' % tests)
 
 
-print("\n%s successful tests" % successfulTests)
-print("%s total tests" % tests)
-
+print("\n%s/%s tests succeeded" % (successfulTests,tests))
