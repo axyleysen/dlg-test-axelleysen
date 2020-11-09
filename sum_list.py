@@ -14,7 +14,7 @@ def sum_list(numbers_to_add):
 
 	"""
 
-    # Converting api inputs into list
+	# Converting api inputs into list
 	list_to_add = [int(item) for item in numbers_to_add.split(",")]
 	# Return response as json object
 	return jsonify({"total": sum(list_to_add)})
