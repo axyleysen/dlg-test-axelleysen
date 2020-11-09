@@ -40,10 +40,6 @@ The application is contained within the `sum_list.py` file with package requirem
 	  "total": 10
 	}
 
-## Sample Calls
-    curl http://localhost:5000/total/0,1,2,3,4
-	curl http://localhost:5000/total/2,4
-
 
 # Assumptions
 - Input list is a comma separated string
