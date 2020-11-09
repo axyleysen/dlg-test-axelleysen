@@ -37,7 +37,7 @@ test_inputs = [
 for test in test_inputs:
 	# Iterate loop
 	tests += 1
-	print('\nTest #%s started' % tests)
+	print("\033[1mTest #%s started\033[0m" % tests)
 
 	# Get respose from local rest api
 	response = requests.get("%s%s" % (url, ",".join(map(str, test['numbers_to_add']))))
@@ -50,9 +50,9 @@ for test in test_inputs:
 	# Check for success in results
 	if test['expected_result'] == returned_result:
 		successfulTests += 1
-		print('Test #%s successful' % tests)
+		print('Test #%s successful\n' % tests)
 	else:
-		print('Test #%s failed' % tests)
+		print('Test #%s failed\n' % tests)
 
 # Display aggregated test results
-print("\n%s/%s tests succeeded" % (successfulTests,tests))
+print("\033[1m%s/%s tests succeeded\033[0m" % (successfulTests,tests))
