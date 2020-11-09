@@ -2,7 +2,7 @@
 
 This is a bare-bones application providing a REST API to sum a list of numbers.
 
-The application is contained within the `sum_list.py` file with package requirements defined in `requirements.py`.
+The application is contained within the `sum_list.py` file with package requirements defined in `requirements.txt`.
 
 
 `tests.py` runs some tests written for TDD.
