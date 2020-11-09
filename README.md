@@ -1,32 +1,50 @@
-# dlg-test-axelleysen
-DLG  Software Engineer Python Test
+# DLG REST API test: dlg-test-axelleysen
+
+This is a bare-bones application providing a REST API to sum a list of numbers.
+
+The application is contained within the `sum_list.py` file with package requirements defined in `requirements.py`.
 
 
-### To run:
-Set up virtual environment and install requirements:
-```bash
-python3 -m virtualenv v-env
-source v-env/bin/activate
-pip3 install -r requirements.txt
-```
+`tests.py` runs some tests writen for TDD.
 
-Run application server:
-```bash
-python3 sum_list.py
-```
 
-Then in another terminal window, or browser, you can api calls. For example:
-```bash
-curl http://localhost:5000/total/0,1,2,3,4
-curl http://localhost:5000/total/2,4
-```
+## Install
+    git clone git@github.com:axyleysen/dlg-test-axelleysen.git
+    pip3 install -r requirements.txt
 
-Or run the test script:
-```bash
-$ python3 tests.py
-```
 
-### Assumptions
+## Run the app
+    python3 sum_list.py
+
+
+## Run the tests
+    python3 tests.py
+
+
+# Sample request
+
+### Request
+
+	curl -i http://localhost:5000/total/0,1,2,3,4
+
+### Response
+
+	HTTP/1.0 200 OK
+	Content-Type: application/json
+	Content-Length: 18
+	Server: Werkzeug/1.0.1 Python/3.7.1
+	Date: Mon, 09 Nov 2020 11:01:44 GMT
+
+	{
+	  "total": 10
+	}
+
+## Sample Calls
+    curl http://localhost:5000/total/0,1,2,3,4
+	curl http://localhost:5000/total/2,4
+
+
+# Assumptions
 - Input list is a comma separated string
 - Input list contains integer numbers and no fractional numbers 
 - Input list may contain positive and negative integers 
