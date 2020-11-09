@@ -1,9 +1,8 @@
 # DLG REST API test: dlg-test-axelleysen
 
-This is a bare-bones application providing a REST API to sum a list of numbers.
+This is a bare-bones application providing a REST API, built using Flask, to sum a list of numbers.
 
 The application is contained within the `sum_list.py` file with package requirements defined in `requirements.txt`.
-
 
 `tests.py` runs some tests written for TDD.
 
