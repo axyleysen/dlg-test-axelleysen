@@ -10,6 +10,7 @@ The application is contained within the `sum_list.py` file with package requirem
 
 ## Install
     git clone git@github.com:axyleysen/dlg-test-axelleysen.git
+    cd dlg-test-axelleysen
     pip3 install -r requirements.txt
 
 
@@ -17,7 +18,7 @@ The application is contained within the `sum_list.py` file with package requirem
     python3 sum_list.py
 
 
-## Run the tests
+## Run the tests (Run command in another terminal window)
     python3 tests.py
 
 
