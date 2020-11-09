@@ -5,7 +5,7 @@ This is a bare-bones application providing a REST API to sum a list of numbers.
 The application is contained within the `sum_list.py` file with package requirements defined in `requirements.py`.
 
 
-`tests.py` runs some tests writen for TDD.
+`tests.py` runs some tests written for TDD.
 
 
 ## Install
