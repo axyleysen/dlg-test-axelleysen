@@ -2,7 +2,7 @@
 import requests
 
 # Define api url
-url = "http://localhost:5000/total/"
+url = "https://4p49pw9rf3.execute-api.eu-west-2.amazonaws.com/?list="
 
 # Initialise test logging variables
 tests = 0
