@@ -10,6 +10,7 @@ The application is contained within the `sum_list.py` file with package requirem
 ## Install
     git clone git@github.com:axyleysen/dlg-test-axelleysen.git
     cd dlg-test-axelleysen
+    git checkout aws-deployment
 
 
 ## Deploy
