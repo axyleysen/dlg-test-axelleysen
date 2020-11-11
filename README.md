@@ -10,14 +10,14 @@ The application is contained within the `sum_list.py` file with package requirem
 ## Install
     git clone git@github.com:axyleysen/dlg-test-axelleysen.git
     cd dlg-test-axelleysen
-    pip3 install -r requirements.txt
 
 
-## Run the app
-    python3 sum_list.py
+## Deploy
 
+	sam package --resolve-s3 --output-template-file out.yaml
+	sam deploy --template-file out.yaml --capabilities CAPABILITY_IAM --stack-name dlg-serverless
 
-## Run the tests (Run command in another terminal window)
+## Run the tests
     python3 tests.py
 
 
@@ -25,19 +25,17 @@ The application is contained within the `sum_list.py` file with package requirem
 
 ### Request
 
-	curl -i http://localhost:5000/total/0,1,2,3,4
+	curl -i https://4p49pw9rf3.execute-api.eu-west-2.amazonaws.com/?list=0,1,2,3,4
 
 ### Response
 
-	HTTP/1.0 200 OK
-	Content-Type: application/json
-	Content-Length: 18
-	Server: Werkzeug/1.0.1 Python/3.7.1
-	Date: Mon, 09 Nov 2020 11:01:44 GMT
+	HTTP/2 200 
+	date: Wed, 11 Nov 2020 08:46:32 GMT
+	content-type: application/json
+	content-length: 13
+	apigw-requestid: V1a0Wg-urPEEMqQ=
 
-	{
-	  "total": 10
-	}
+	{"total": 10}
 
 
 # Assumptions
